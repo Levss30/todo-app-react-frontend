@@ -43,16 +43,20 @@ function App() {
           <button className={`secondaryBtn ${isCompleteScreen===true &&  'active'}`} onClick={()=>setIsCompleteScreen(true)}>Completed</button>
         </div>
         <div className="todo-list">
-            <div className="todo-list-item">
+        {allTodos.map((item,index)=>{
+              return(
+                <div className="todo-list-item" key={index}>
               <div>
-              <h3>Task 1</h3>
-              <p>Description</p>
+              <h3>{item.title}</h3>
+              <p>{item.description}</p>
               </div>
               <div>
-              <AiOutlineDelete className='icon' />
-              <BsCheckLg className='check-icon' />
+                <AiOutlineDelete className='icon' />
+                <BsCheckLg className='check-icon' />
+              </div>
             </div>
-            </div>
+              )
+            })}
 
         </div>
       </div>
