@@ -50,6 +50,14 @@ function App() {
     localStorage.setItem('completedTodos', JSON.stringify (updatedCompletedArr));
   };
 
+  const handleDeleteCompletedTodo = (index) =>{
+    let reducedTodo = [...completedTodos];
+    reducedTodo.splice(index);
+
+    localStorage.setItem('completedTodos', JSON.stringify(reducedTodo));
+    setCompletedTodos(reducedTodo);
+  };
+
   useEffect(()=>{
     let savedTodo = JSON.parse(localStorage.getItem('todolist'))
     let savedCompletedTodo = JSON.parse(localStorage.getItem('completedTodos'))
@@ -108,7 +116,7 @@ function App() {
               <p><small>Completed on:{item.completedOn}</small></p>
               </div>
               <div>
-                <AiOutlineDelete className='icon' onClick={()=>handleDeleteTodo(index)} title='Delete?' />
+                <AiOutlineDelete className='icon' onClick={()=>handleDeleteCompletedTodo(index)} title='Delete?' />
               </div>
             </div>
               );
