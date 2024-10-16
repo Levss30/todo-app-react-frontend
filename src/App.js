@@ -26,7 +26,7 @@ function App() {
     reducedTodo.splice(index);
 
     localStorage.setItem('todolist', JSON.stringify(reducedTodo));
-    setTodos(reducedTodo)
+    setTodos(reducedTodo);
   };
 
   const handCompleteTodo = (index)=>{
@@ -46,6 +46,7 @@ function App() {
     let updatedCompletedArr = [...completedTodos];
     updatedCompletedArr.push(filteredItem);
     setCompletedTodos(updatedCompletedArr);
+    handleDeleteTodo(index);
   }
 
   useEffect(()=>{
@@ -89,6 +90,20 @@ function App() {
               <div>
                 <AiOutlineDelete className='icon' onClick={()=>handleDeleteTodo(index)} title='Delete?' />
                 <BsCheckLg className='check-icon' onClick={()=>handCompleteTodo(index)} title='Complete?'/>
+              </div>
+            </div>
+              );
+            })}
+         {isCompleteScreen===true && completedTodos.map((item,index)=>{
+              return(
+                <div className="todo-list-item" key={index}>
+              <div>
+              <h3>{item.title}</h3>
+              <p>{item.description}</p>
+              <p><small>Completed on:{item.completedOn}</small></p>
+              </div>
+              <div>
+                <AiOutlineDelete className='icon' onClick={()=>handleDeleteTodo(index)} title='Delete?' />
               </div>
             </div>
               );
