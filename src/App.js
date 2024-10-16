@@ -23,7 +23,7 @@ function App() {
   
   const handleDeleteTodo = (index)=>{
     let reducedTodo = [...allTodos];
-    reducedTodo.splice(index);
+    reducedTodo.splice(index, 1);
 
     localStorage.setItem('todolist', JSON.stringify(reducedTodo));
     setTodos(reducedTodo);
@@ -46,13 +46,13 @@ function App() {
     let updatedCompletedArr = [...completedTodos];
     updatedCompletedArr.push(filteredItem);
     setCompletedTodos(updatedCompletedArr);
-    handleDeleteTodo(index);
+    handleDeleteTodo(index, 1);
     localStorage.setItem('completedTodos', JSON.stringify (updatedCompletedArr));
   };
 
   const handleDeleteCompletedTodo = (index) =>{
     let reducedTodo = [...completedTodos];
-    reducedTodo.splice(index);
+    reducedTodo.splice(index, 1);
 
     localStorage.setItem('completedTodos', JSON.stringify(reducedTodo));
     setCompletedTodos(reducedTodo);
