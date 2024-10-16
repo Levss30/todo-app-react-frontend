@@ -47,13 +47,18 @@ function App() {
     updatedCompletedArr.push(filteredItem);
     setCompletedTodos(updatedCompletedArr);
     handleDeleteTodo(index);
-  }
+    localStorage.setItem('completedTodos', JSON.stringify (updatedCompletedArr));
+  };
 
   useEffect(()=>{
     let savedTodo = JSON.parse(localStorage.getItem('todolist'))
+    let savedCompletedTodo = JSON.parse(localStorage.getItem('completedTodos'))
     if(savedTodo){
       setTodos(savedTodo);
-    }
+    };
+    if(savedCompletedTodo){
+      setCompletedTodos(savedCompletedTodo);
+    };
   },[])
   return (
     <div className="App">
