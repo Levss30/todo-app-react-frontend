@@ -83,7 +83,6 @@ function App() {
             <input type="text" value={newDescription} onChange={(e) => setNewDescription(e.target.value)} placeholder="What's the task description ?" />
           </div>
           <div className="todo-input-item">
-            <label>Title</label>
             <button type="button" onClick={handleAddTodo} className="primaryBtn">Add</button>
           </div>
         </div>
