@@ -8,15 +8,15 @@ export const LoginPage = () => {
             <div className='login-input'>
                 <h1>Login</h1>
                 <div className='login-input-item'>
-                    <label>Usuario</label>
-                    <input type='text' placeholder='Digite um usuario' />
+                    <label>Email</label>
+                    <input type='text' placeholder='User@exemple.com' />
                 </div>
                 <div className='login-input-item'>
                     <label>Senha</label>
                     <input type="text" placeholder='Digite uma senha' />
+                    <div className='esquecisenhaBtn'>
                     <label className='esquecisenha'>Recuperar senha</label>
-                    <input type="checkbox" className='checkbox-login' />
-                    <label className='aceppt'>Aceito os termos e condições</label>
+                    </div>
                 </div>
                 <div className='login-input-item-check'>
 
