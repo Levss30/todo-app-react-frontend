@@ -1,8 +1,9 @@
-import './LoginPage.css'
+import './LoginPage.css';
 
 export const LoginPage = () => {
 
   return (
+<div className='background'>
     <div className='loginpage'>
         <div className='login-wrapper'>
             <div className='login-input'>
@@ -29,5 +30,6 @@ export const LoginPage = () => {
             </div>
         </div>
     </div>
+</div>
   )
 }

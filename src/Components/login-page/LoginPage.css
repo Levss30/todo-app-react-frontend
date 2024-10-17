@@ -1,5 +1,10 @@
+.background{
+    background-image: url("../assets/background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 .loginpage{
-    background-color: aqua;
     height: 100vh;
     color: white;
 }
@@ -9,6 +14,7 @@
     justify-content: center;
     align-items: center;
     padding: 10%;
+
 }
 
 .login-input{
@@ -18,7 +24,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: #2f2841;
+    background: rgba(71, 71, 71, 0.904);
     border-radius: 10px;
     box-shadow: 0px 10px 40px #00000056;
 }
@@ -44,11 +50,14 @@
 }
 
 .loginBtn{
-    padding: 8px;
+    padding: 10px;
     margin-right: 100px;
     color: white;
-    background-color: #2f2841;
+    background-color: #414040;
     border-radius: 5px;
+    border: none;
+    box-shadow: 1px 1px 5px black;
+    cursor: pointer;
 }
 
 .esquecisenha{
@@ -63,11 +72,12 @@ justify-content: end;
 }
 
 .esquecisenha:hover{
-    color: rgb(73, 73, 156);
+    color: #00008b;
 }
 
 .registerBtn{
     border: none;
     background: none;
     color: white;
+    cursor: pointer;
 }
