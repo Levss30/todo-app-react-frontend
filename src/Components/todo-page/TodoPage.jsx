@@ -88,11 +88,11 @@ const TodoPage = () => {
       </div>
 
       <div className="btn-area">
-        <button className={`secondaryBtn ${isCompleteScreen === false && 'active'}`} onClick={() => setIsCompleteScreen(false)}>Todo</button>
-        <button className={`secondaryBtn ${isCompleteScreen === true && 'active'}`} onClick={() => setIsCompleteScreen(true)}>Completed</button>
+        <button className={`secondaryBtn ${!isCompleteScreen && 'active'}`} onClick={() => setIsCompleteScreen(false)}>Todo</button>
+        <button className={`secondaryBtn ${isCompleteScreen && 'active'}`} onClick={() => setIsCompleteScreen(true)}>Completed</button>
       </div>
       <div className="todo-list">
-        {isCompleteScreen === false && allTodos.map((item, index) => {
+        {!isCompleteScreen && allTodos.map((item, index) => {
           return (
             <div className="todo-list-item" key={index}>
               <div>
@@ -106,7 +106,7 @@ const TodoPage = () => {
             </div>
           );
         })}
-        {isCompleteScreen === true && completedTodos.map((item, index) => {
+        {isCompleteScreen && completedTodos.map((item, index) => {
           return (
             <div className="todo-list-item" key={index}>
               <div>
