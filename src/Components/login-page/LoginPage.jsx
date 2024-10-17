@@ -20,9 +20,7 @@ export const LoginPage = () => {
                     </div>
                 </div>
                 <div className='login-input-item-check'>
-
                 </div>
-
                 <div className='login-input-item'>
                     <button type='button' className='loginBtn'>Entrar</button>
                     <button type='button' className='registerBtn'>Cadastrar-se</button>
