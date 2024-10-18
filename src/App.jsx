@@ -1,10 +1,23 @@
-import { LoginPage } from './Components/login-page/LoginPage';
-import TodoPage from './Components/todo-page/TodoPage';
+import { AuthProvider } from './context/AuthProvider';
+import { BrowserRouter, Route} from 'react-router-dom';
 
 function App() {
 
   return (
-    <LoginPage />
+    <AuthProvider>
+      <BrowserRouter>
+
+      <Route path='/profile'>
+
+      </Route>
+
+      <Route path='/login'>
+
+      </Route>
+
+      </BrowserRouter>
+    </AuthProvider>
+
   );
 }
 
