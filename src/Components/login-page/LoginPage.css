@@ -94,6 +94,7 @@ justify-content: end;
     cursor: pointer;
     justify-content: center;
     align-items: center;
+    font-size: small;
 }
 
 .registerBtn:hover{
