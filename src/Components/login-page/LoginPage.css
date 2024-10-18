@@ -40,6 +40,7 @@
     border: none;
     width: 300px;
     border-radius: 5px;
+    padding-left: 30px;
 }
 
 .login-input-item{
@@ -48,13 +49,17 @@
 
 .loginBtn{
     padding: 13px;
-    margin-right: 110px;
     color: white;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    margin-bottom: 15px;
     background-color: #414040;
     border-radius: 5px;
     border: none;
     box-shadow: 1px 1px 5px black;
     cursor: pointer;
+    display: flex;
 }
 
 .loginBtn:hover{
@@ -74,7 +79,12 @@ justify-content: end;
 }
 
 .esquecisenha:hover{
-    color: #00008b;
+    font-weight: bold;
+}
+
+.lblregister{
+    font-size: small;
+    margin-left: 50px;
 }
 
 .registerBtn{
@@ -82,4 +92,17 @@ justify-content: end;
     background: none;
     color: white;
     cursor: pointer;
+    justify-content: center;
+    align-items: center;
+}
+
+.registerBtn:hover{
+    font-weight: bold;
+}
+
+#icon {
+    position: absolute;
+    margin-left: 9px;
+    transform: translateY(50%);
+    color: black;
 }

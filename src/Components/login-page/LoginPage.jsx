@@ -12,12 +12,12 @@ export const LoginPage = () => {
                 <h1>Login</h1>
                 <div className='login-input-item'>
                     <label>Email</label>
-                    <FaUser className='icon1'/>
+                    <FaUser id='icon'/>
                     <input type='text' placeholder='User@exemple.com' />
                 </div>
                 <div className='login-input-item'>
                     <label>Senha</label>
-                    <FaLock id='icon2'/>
+                    <FaLock id='icon'/>
                     <input type="text" placeholder='Digite uma senha' />
                     <div className='esquecisenhaBtn'>
                     <label className='esquecisenha'>Recuperar senha</label>
@@ -27,7 +27,9 @@ export const LoginPage = () => {
                 </div>
                 <div className='login-input-item'>
                     <button type='button' className='loginBtn'>Entrar</button>
+                    <label className='lblregister'>Não tem uma conta ?
                     <button type='button' className='registerBtn'>Cadastrar-se</button>
+                    </label>
                 </div>
             </div>
         </div>
