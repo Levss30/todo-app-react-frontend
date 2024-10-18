@@ -7,11 +7,12 @@ export const LoginPage = () => {
     const [username,setUsername] = useState("");
     const [password,setPassword] = useState("");
 
-    const handleSubmit = (event) =>{
-        event.preventDefault();
+    const handleSubmit = (e) =>{
+        e.preventDefault();
         
         alert("Entrando com " + username + " " + password);
     };
+
 
   return (
 <div className='background'>
@@ -27,7 +28,7 @@ export const LoginPage = () => {
                 <div className='login-input-item'>
                     <label>Senha</label>
                     <FaLock id='icon'/>
-                    <input type="text" placeholder='Digite uma senha' onChange={(e) => setPassword(e.target.value)}/>
+                    <input type="password" placeholder='Digite uma senha' onChange={(e) => setPassword(e.target.value)}/>
                     <div className='esquecisenhaBtn'>
                     <label className='esquecisenha'>Recuperar senha</label>
                     </div>
