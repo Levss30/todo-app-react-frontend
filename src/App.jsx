@@ -1,23 +1,11 @@
+import { LoginPage } from './Components/login-page/LoginPage';
 import { AuthProvider } from './context/AuthProvider';
-import { BrowserRouter, Route} from 'react-router-dom';
+import { BrowserRouter, Route, Routes} from 'react-router-dom';
 
 function App() {
 
   return (
-    <AuthProvider>
-      <BrowserRouter>
-
-      <Route path='/profile'>
-
-      </Route>
-
-      <Route path='/login'>
-
-      </Route>
-
-      </BrowserRouter>
-    </AuthProvider>
-
+    <LoginPage />
   );
 }
 
