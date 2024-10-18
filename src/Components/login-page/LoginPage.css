@@ -14,7 +14,6 @@
     justify-content: center;
     align-items: center;
     padding: 10%;
-
 }
 
 .login-input{
@@ -25,8 +24,10 @@
     align-items: center;
     flex-direction: column;
     background: rgba(71, 71, 71, 0.904);
+    backdrop-filter: blur(2px);
     border-radius: 10px;
     box-shadow: 0px 10px 40px #00000056;
+    border: 1px solid rgb(255, 255, 255, .2);
 }
 
 .login-input label{
@@ -35,7 +36,7 @@
 }
 
 .login-input-item input{
-    padding: 8px;
+    padding: 10px;
     border: none;
     width: 300px;
     border-radius: 5px;
