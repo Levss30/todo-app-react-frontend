@@ -5,7 +5,9 @@ const CadastroPage = () => {
     <div className='background'>
         <div className='cadastropage'>
             <div className='cadastro-wrapper'>
-                
+                <div className='cadastro-input'>
+                    <h1>Cadastro</h1>
+                </div>
             </div>
         </div>
     </div>
