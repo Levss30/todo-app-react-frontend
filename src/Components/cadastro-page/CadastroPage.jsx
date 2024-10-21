@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import './CadastroPage.css';
 
 const CadastroPage = () => {
   return (
@@ -10,19 +11,19 @@ const CadastroPage = () => {
                 </div>
                 <div className='cadastro-input-item'>
                   <label>Nome</label>
-                  <input type="text" placeholder='Digite o seu nome' />
+                  <input type="text" placeholder='Digite o seu nome' required/>
                 </div>
                 <div className='cadastro-input-item'>
                   <label>Email</label>
-                  <input type="text" placeholder='Digite o seu email' />
+                  <input type="email" placeholder='Digite o seu email' required/>
                 </div>
                 <div className='cadastro-input-item'>
                   <label>Senha</label>
-                  <input type="password" placeholder='Digite uma senha'/>
+                  <input type="password" placeholder='Digite uma senha' required/>
                 </div>
                 <div className='cadastro-input-item'>
                   <label>Confirmar senha</label>
-                  <input type="password"  placeholder='confirme a senha'/>
+                  <input type="password"  placeholder='confirme a senha' required/>
                 </div>
                 <div className='cadastro-input-button'>
                   <button className='confirmBtn'>Confirmar</button>
