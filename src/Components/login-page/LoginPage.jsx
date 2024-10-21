@@ -14,6 +14,11 @@ export const LoginPage = () => {
         navigate('/home')
 };
 
+    const handleRegister = (e) =>{
+        e.preventDefault();
+        navigate('/register')
+    }
+
 
   return (
 <div className='background'>
@@ -34,12 +39,10 @@ export const LoginPage = () => {
                     <label className='esquecisenha'>Recuperar senha</label>
                     </div>
                 </div>
-                <div className='login-input-item-check'>
-                </div>
                 <div className='login-input-item'>
-                    <button type='button' className='loginBtn' onClick={handleSubmit}>Entrar</button>
+                    <button className='loginBtn' onClick={handleSubmit}>Entrar</button>
                     <label className='lblregister'>Não tem uma conta ?
-                    <button className='registerBtn'>Cadastrar-se</button>
+                    <button className='registerBtn' onClick={handleRegister}>Cadastrar-se</button>
                     </label>
                 </div>
             </div>
