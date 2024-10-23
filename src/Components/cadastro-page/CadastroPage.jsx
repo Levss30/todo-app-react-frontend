@@ -25,8 +25,8 @@ const CadastroPage = () => {
                   <label>Confirmar senha</label>
                   <input type="password"  placeholder='confirme a senha' required/>
                 </div>
-                <label>
-                    <input type="checkbox" name="Terms" id="terms" />
+                <label className='checkLbl'>
+                    <input type="checkbox" name="Terms" id="terms" required/>
                     Aceito os termos e condições
                   </label>
                 <div className='cadastro-input-button'>
