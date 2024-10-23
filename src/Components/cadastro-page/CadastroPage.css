@@ -26,6 +26,15 @@
     border: 1px solid rgb(255, 255, 255, .2);
 }
 
+.cadastro-wrapper label{
+    padding: 2px;
+    display: flex;
+}
+
+.cadastro-input-item{
+    padding: 10px;
+}
+
 .cadastro-input-item input{
     padding: 5px;
     display: flex;
