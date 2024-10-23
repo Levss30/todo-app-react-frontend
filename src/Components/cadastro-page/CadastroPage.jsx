@@ -5,10 +5,11 @@ const CadastroPage = () => {
   return (
     <div className='background'>
         <div className='cadastropage'>
+          <div className='control-wrapper'>
             <div className='cadastro-wrapper'>
                 <div className='cadastro-input'>
                     <h1>Create accont</h1>
-
+                    </div>
                 <div className='cadastro-input-item'>
                   <label>Nome</label>
                   <input type="text" placeholder='Digite o seu nome' required/>
@@ -33,7 +34,7 @@ const CadastroPage = () => {
                   <button className='confirmBtn'>Confirmar</button>
                   <button className='voltarBtn'>Voltar</button>
                 </div>
-                </div>
+            </div>
             </div>
         </div>
     </div>
