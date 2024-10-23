@@ -8,7 +8,7 @@ const CadastroPage = () => {
             <div className='cadastro-wrapper'>
                 <div className='cadastro-input'>
                     <h1>Create accont</h1>
-                </div>
+
                 <div className='cadastro-input-item'>
                   <label>Nome</label>
                   <input type="text" placeholder='Digite o seu nome' required/>
@@ -32,6 +32,7 @@ const CadastroPage = () => {
                 <div className='cadastro-input-button'>
                   <button className='confirmBtn'>Confirmar</button>
                   <button className='voltarBtn'>Voltar</button>
+                </div>
                 </div>
             </div>
         </div>
