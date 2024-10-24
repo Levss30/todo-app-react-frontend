@@ -8,7 +8,7 @@ const CadastroPage = () => {
           <div className='control-wrapper'>
             <div className='cadastro-wrapper'>
                 <div className='cadastro-input'>
-                    <h1>Create accont</h1>
+                    <h1>Cadastro</h1>
 
                 <div className='cadastro-input-item'>
                   <label>Nome</label>
