@@ -3,7 +3,9 @@ import './SenhaPage.css';
 
 const SenhaPage = () => {
   return (
-    <div>SenhaPage</div>
+    <div className='senhapage'>
+        
+    </div>
   )
 }
 

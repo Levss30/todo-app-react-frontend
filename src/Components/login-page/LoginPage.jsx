@@ -3,7 +3,6 @@ import { FaUser } from "react-icons/fa6";
 import { FaLock } from "react-icons/fa";
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import SenhaPage from '../senha-page/SenhaPage';
 
 export const LoginPage = () => {
     const [username,setUsername] = useState("");
