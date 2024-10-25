@@ -70,7 +70,7 @@ const TodoPage = () => {
     }, [])
   return (
     <div className="App">
-    <h1>Meus afazeres</h1>
+    <h1>Compromissos</h1>
 
     <div className="todo-wrapper">
       <div className="todo-input">
