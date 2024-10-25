@@ -3,6 +3,7 @@ import { FaUser } from "react-icons/fa6";
 import { FaLock } from "react-icons/fa";
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import SenhaPage from '../senha-page/SenhaPage';
 
 export const LoginPage = () => {
     const [username,setUsername] = useState("");
@@ -17,6 +18,11 @@ export const LoginPage = () => {
     const handleRegister = (e) =>{
         e.preventDefault();
         navigate('/register')
+};
+
+    const handleForgotPassword = (e) =>{
+        e.preventDefault();
+        navigate('/forgot-password')
     }
 
 
@@ -36,7 +42,7 @@ export const LoginPage = () => {
                     <FaLock id='icon'/>
                     <input type="password" placeholder='Digite uma senha' value={password} onChange={(e) => setPassword(e.target.value)}/>
                     <div className='esquecisenhaBtn'>
-                    <label className='esquecisenha'>Recuperar senha</label>
+                    <label className='esquecisenha' onClick={handleForgotPassword}>Recuperar senha</label>
                     </div>
                 </div>
                 <div className='login-input-item'>
