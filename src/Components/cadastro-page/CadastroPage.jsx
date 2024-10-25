@@ -1,7 +1,20 @@
 import React from 'react';
 import './CadastroPage.css';
+import { useNavigate } from 'react-router-dom';
 
 const CadastroPage = () => {
+  const navigate = useNavigate();
+
+  const handleSubmit = (e) =>{
+    e.preventDefault();
+    navigate('/home')
+};
+
+  const handleReturn = (e) =>{
+    e.preventDefault();
+    navigate('/')
+  }
+
   return (
     <div className='background'>
         <div className='cadastropage'>
@@ -30,8 +43,8 @@ const CadastroPage = () => {
                     Aceito os termos e condições
                   </label>
                 <div className='cadastro-input-button'>
-                  <button className='voltarBtn'>Voltar</button>
-                  <button className='confirmBtn'>Confirmar</button>
+                  <button className='voltarBtn'  onClick={handleReturn}>Voltar</button>
+                  <button className='confirmBtn' onClick={handleSubmit}>Confirmar</button>
                 </div>
                 </div>
             </div>
