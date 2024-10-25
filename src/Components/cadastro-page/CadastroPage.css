@@ -60,6 +60,12 @@
     display: flex;
 }
 
+.confirmBtn:hover{
+    transition: 10ms;
+    transform: translateY(-1px);
+}
+
+
 .voltarBtn{
     height: 30px;
     border: none;
@@ -69,4 +75,9 @@
     justify-content: center;
     align-items: center;
     font-size: small;
+}
+
+.voltarBtn:hover{
+    transition: 10ms;
+    transform: translateY(-1px);
 }
