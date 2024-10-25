@@ -30,8 +30,8 @@ const CadastroPage = () => {
                     Aceito os termos e condições
                   </label>
                 <div className='cadastro-input-button'>
-                  <button className='confirmBtn'>Confirmar</button>
                   <button className='voltarBtn'>Voltar</button>
+                  <button className='confirmBtn'>Confirmar</button>
                 </div>
                 </div>
             </div>
