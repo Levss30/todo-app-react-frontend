@@ -31,14 +31,25 @@
     display: flex;
 }
 
+.cadastro-input h1{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
 .cadastro-input-item{
-    padding: 10px;
+    padding: 9px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20%;
 }
 
 .cadastro-input-item input{
     padding: 5px;
+    width: 200px;
     display: flex;
     border-radius: 6px;
+    border: none;
 }
 
 .cadastro-input-button{
@@ -80,4 +91,14 @@
 .voltarBtn:hover{
     transition: 10ms;
     transform: translateY(-1px);
+}
+
+
+.checkLbl{
+    font-size: small;
+}
+
+.terms{
+    margin-bottom: 15px;
+    margin-left: 23%;
 }
