@@ -40,3 +40,9 @@
     display: flex;
     border-radius: 6px;
 }
+
+.cadastro-input-button{
+    display: flex;
+    padding: 15px;
+    justify-content: space-around;
+}
