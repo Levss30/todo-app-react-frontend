@@ -1,7 +1,14 @@
 import React from 'react'
 import './SenhaPage.css';
+import { useNavigate } from 'react-router-dom';
 
 const SenhaPage = () => {
+    const navigate = useNavigate();
+
+    const handleReturn = (e) =>{
+      e.preventDefault();
+      navigate('/login')
+};
   return (
     <div className='background'>
         <div className='senhapage'>
@@ -18,7 +25,7 @@ const SenhaPage = () => {
               </div>
               </div>
               <div className='wrapper-input-button'>
-              <button className='returnBtn'>Voltar</button>
+              <button className='returnBtn' onClick={handleReturn}>Voltar</button>
               <button className='nextBtn'>Avançar</button>
               </div>
             </div>
