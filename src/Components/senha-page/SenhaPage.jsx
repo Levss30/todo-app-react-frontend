@@ -7,7 +7,7 @@ const SenhaPage = () => {
 
     const handleReturn = (e) =>{
       e.preventDefault();
-      navigate('/login')
+      navigate('/')
 };
   return (
     <div className='background'>
