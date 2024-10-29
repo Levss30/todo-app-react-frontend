@@ -15,8 +15,8 @@ const SenhaPage = () => {
                 </label>
               </div>
               <div className='wrapper-input-button'>
-              <button className='nextBtn'>Avançar</button>
               <button className='returnBtn'>Voltar</button>
+              <button className='nextBtn'>Avançar</button>
               </div>
               </div>
             </div>
