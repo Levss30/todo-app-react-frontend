@@ -37,9 +37,29 @@ const SenhaPage = () => {
                 </div>
               </div>
 
+              <div className='step'>
+                <div className={`step ${step === 3 && "active"}`}>
+                  <div className='wrapper-input-item'>
+                <label>Digite o seu email
+                  <input type="text" placeholder='meuemailteste@email.com'/>
+                </label>
+                  </div>
+                </div>
+              </div>
+
+              <div className='step'>
+                <div className={`step ${step === 4 && "active"}`}>
+                  <div className='wrapper-input-item'>
+                <label>Digite o seu email
+                  <input type="text" placeholder='meuemailteste@email.com'/>
+                </label>
+                  </div>
+                </div>
+              </div>
+
               <div className='wrapper-input-button'>
-              <button className='returnBtn' onClick={handleReturn}>Voltar</button>
-              <button className='nextBtn'>Avançar</button>
+              <button className='returnBtn' simple style={{display: `${step > 1 ? 'block' : 'none'}`, marginRight: 'auto'}} onClick={(e) => {setStep(step - 1); e.preventDefault()}}>Voltar</button>
+              <button className='nextBtn' style={{display: `${step < 4 ? 'block' : 'none'}`, marginLeft: 'auto'}} onClick={(e) => {setStep(step + 1); e.preventDefault()}}>Avançar</button>
               </div>
               </div>
             </div>
