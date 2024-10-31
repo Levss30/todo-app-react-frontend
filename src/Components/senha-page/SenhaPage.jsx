@@ -16,6 +16,7 @@ const SenhaPage = () => {
           <div className='control-wrapper'>
             <div className='senha-wrapper'>
               <div className='wrapper-input'>
+{/* 
               <h1>Recuperar senha</h1>
               </div>
               <div className='steps'>
@@ -26,7 +27,7 @@ const SenhaPage = () => {
                 </label>
               </div>
               </div>
-{/* 
+
               <div className='step'>
                 <div className={`step ${step === 2 && "active"}`}>
                   <div className='wrapper-input-item'>
