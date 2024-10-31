@@ -102,9 +102,10 @@ const SenhaPage = () => {
                         )}
 
               <div className='wrapper-input-button'>
+              <button className='cancelBtn' style={{display: `${step === 1 ? 'block' : 'none'}`}} onClick={handleReturn} >Cancelar</button>
               <button className='returnBtn' style={{display: `${step > 1 && step < 4 ? 'block' : 'none'}`}} onClick={(e) => {setStep(step - 1); e.preventDefault()}}>Voltar</button>
-              <button className='confirmarBtn' style={{display: `${step > 4 ? 'block' : 'none'}`}} onClick={handleReturn} >Confirmar</button>
               <button className='nextBtn' style={{display: `${step < 5 ? 'block' : 'none'}`}} onClick={(e) => {setStep(step + 1); e.preventDefault()}}>Avançar</button>
+              <button className='confirmarBtn' style={{display: `${step > 4 ? 'block' : 'none'}`}} onClick={handleReturn} >Confirmar</button>
               </div>
               </div>
             </div>
