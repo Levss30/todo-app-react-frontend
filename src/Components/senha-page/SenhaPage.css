@@ -24,24 +24,17 @@
     border-radius: 10px;
     box-shadow: 0px 10px 40px #00000056;
     border: 1px solid rgb(255, 255, 255, .2);
+    display: flex;
 
 }
 
-.wrapper-input-item{
-    margin-left: 10%;
-}
-
-.wrapper-input h1{
+.wrapper-input {
     margin-bottom: 50px;
-    margin-left: 10%;
+    justify-content: center;
+    align-items: center;
 }
 
-.wrapper-input-item label{
-    font-weight: bold;
-    font-size: medium;
-}
-
-.wrapper-input-item input{
+.form-group input{
     padding: 9px;
     width: 300px;
     display: flex;
