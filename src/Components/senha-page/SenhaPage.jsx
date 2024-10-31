@@ -22,7 +22,7 @@ const SenhaPage = () => {
               <div className={`step ${step === 1 && "active"}`}>
               <div className='wrapper-input-item'>
                 <label>Digite o seu email
-                  <input type="text" placeholder='meuemailteste@email.com'/>
+                  <input type="text" placeholder='Teste@email.com'/>
                 </label>
               </div>
               </div>
@@ -39,7 +39,7 @@ const SenhaPage = () => {
                 <div className={`step ${step === 3 && "active"}`}>
                   <div className='wrapper-input-item'>
                 <label>Digite o código
-                  <input type="text" placeholder=''/>
+                  <input type="text" placeholder='Digite o código'/>
                 </label>
                   </div>
                 </div>
