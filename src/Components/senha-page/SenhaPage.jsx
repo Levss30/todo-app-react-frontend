@@ -53,7 +53,7 @@ const SenhaPage = () => {
                   </div>
                 </div>
               </div> */}
-            
+
               {step === 1 && (
                           <>
                             <header>
@@ -64,6 +64,39 @@ const SenhaPage = () => {
                             </div>
                             <div className="form-group">
                               <input type='email' placeholder="Teste@Email.com"/>
+                            </div>
+                          </>
+                        )}
+
+              {step === 2 && (
+                          <>
+                            <header>
+                              <h1 className="form-title">Enviando um código para o email indicado</h1>
+                              <p className="form-description">Um código de seis digitos deverá ser encaminhado ao seu email</p>
+                            </header>
+                          </>
+                        )}
+
+              {step === 3 && (
+                          <>
+                            <header>
+                              <h1 className="form-title">Digite o código</h1>
+                            </header>
+                            <div className="form-group">
+                              <input placeholder="000-000" />
+                            </div>
+                          </>
+                        )}
+
+              {step === 4 && (
+                          <>
+                            <header>
+                              <h1 className="form-title">Alterar senha</h1>
+                              <p className="form-description">Insira uma nova senha</p>
+                            </header>
+                            <div className="form-group">
+                              <input type='password' placeholder="Nova Senha"/>
+                              <input type='password' placeholder="Confirmar Senha"/>
                             </div>
                           </>
                         )}
