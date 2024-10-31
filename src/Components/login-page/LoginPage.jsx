@@ -34,7 +34,7 @@ export const LoginPage = () => {
                 <div className='login-input-item'>
                     <label>Email</label>
                     <FaUser id='icon'/>
-                    <input type='email' placeholder='User@exemple.com' value={username} onChange={(e) => setUsername(e.target.value)}/>
+                    <input type='email' placeholder='User@exemple.com' value={username} onChange={(e) => setUsername(e.target.value)} required/>
                 </div>
                 <div className='login-input-item'>
                     <label>Senha</label>
