@@ -53,6 +53,20 @@ const SenhaPage = () => {
                   </div>
                 </div>
               </div> */}
+            
+              {step === 1 && (
+                          <>
+                            <header>
+                              <h1 className="form-title">Recuperar Senha</h1>
+                            </header>
+                            <div className='form-description'>
+                              Digite o seu email
+                            </div>
+                            <div className="form-group">
+                              <input type='email' placeholder="Teste@Email.com"/>
+                            </div>
+                          </>
+                        )}
 
               <div className='wrapper-input-button'>
               <button className='returnBtn' style={{display: `${step > 1 ? 'block' : 'none'}`}} onClick={(e) => {setStep(step - 1); e.preventDefault()}}>Voltar</button>
