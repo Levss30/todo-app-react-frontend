@@ -30,9 +30,7 @@ const SenhaPage = () => {
               <div className='step'>
                 <div className={`step ${step === 2 && "active"}`}>
                   <div className='wrapper-input-item'>
-                <label>Digite o seu email
-                  <input type="text" placeholder='meuemailteste@email.com'/>
-                </label>
+                <label>Enviando o código para o email fornecido</label>
                   </div>
                 </div>
               </div>
@@ -40,8 +38,8 @@ const SenhaPage = () => {
               <div className='step'>
                 <div className={`step ${step === 3 && "active"}`}>
                   <div className='wrapper-input-item'>
-                <label>Digite o seu email
-                  <input type="text" placeholder='meuemailteste@email.com'/>
+                <label>Digite o código
+                  <input type="text" placeholder=''/>
                 </label>
                   </div>
                 </div>
@@ -50,9 +48,7 @@ const SenhaPage = () => {
               <div className='step'>
                 <div className={`step ${step === 4 && "active"}`}>
                   <div className='wrapper-input-item'>
-                <label>Digite o seu email
-                  <input type="text" placeholder='meuemailteste@email.com'/>
-                </label>
+                <label>Senha alterada com sucesso!!</label>
                   </div>
                 </div>
               </div>
