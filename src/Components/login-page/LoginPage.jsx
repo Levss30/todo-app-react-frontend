@@ -39,7 +39,7 @@ export const LoginPage = () => {
                 <div className='login-input-item'>
                     <label>Senha</label>
                     <FaLock id='icon'/>
-                    <input type="password" placeholder='Digite uma senha' value={password} onChange={(e) => setPassword(e.target.value)}/>
+                    <input type="password" placeholder='Digite uma senha' value={password} onChange={(e) => setPassword(e.target.value)} required/>
                     <div className='esquecisenhaBtn'>
                     <label className='esquecisenha' onClick={handleForgotPassword}>Recuperar senha</label>
                     </div>
