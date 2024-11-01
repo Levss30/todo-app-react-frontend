@@ -15,43 +15,6 @@ const SenhaPage = () => {
         <div className='senhapage'>
           <div className='control-wrapper'>
             <div className='senha-wrapper'>
-{/* 
-              <h1>Recuperar senha</h1>
-              </div>
-              <div className='steps'>
-              <div className={`step ${step === 1 && "active"}`}>
-              <div className='wrapper-input-item'>
-                <label>Digite o seu email
-                  <input type="text" placeholder='Teste@email.com'/>
-                </label>
-              </div>
-              </div>
-
-              <div className='step'>
-                <div className={`step ${step === 2 && "active"}`}>
-                  <div className='wrapper-input-item'>
-                <label>Enviando o código para o email fornecido</label>
-                  </div>
-                </div>
-              </div>
-
-              <div className='step'>
-                <div className={`step ${step === 3 && "active"}`}>
-                  <div className='wrapper-input-item'>
-                <label>Digite o código
-                  <input type="text" placeholder='Digite o código'/>
-                </label>
-                  </div>
-                </div>
-              </div>
-
-              <div className='step'>
-                <div className={`step ${step === 4 && "active"}`}>
-                  <div className='wrapper-input-item'>
-                <label>Senha alterada com sucesso!!</label>
-                  </div>
-                </div>
-              </div> */}
               <div className='content'>
               {step === 1 && (
                           <>
