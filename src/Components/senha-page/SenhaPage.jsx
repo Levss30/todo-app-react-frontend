@@ -83,7 +83,7 @@ const SenhaPage = () => {
                               <p>Digite o código de seis digitos enviado ao email fornecido</p>
                             </header>
                             <div className="form-group">
-                              <input placeholder="000-000" />
+                              <input type='text' placeholder="000-000" />
                             </div>
                           </>
                         )}
