@@ -28,12 +28,18 @@
 
 }
 
-.wrapper-input {
-    margin-bottom: 50px;
-    justify-content: center;
-    align-items: center;
+.content{
+    padding: 20px 50px;
 }
 
+.hstp1{
+    margin-bottom: 30px;
+}
+
+
+.hstp2{
+    margin-bottom: 50px;
+}
 .form-group input{
     padding: 9px;
     width: 300px;
@@ -41,13 +47,31 @@
     border-radius: 6px;
     border: none;
     margin-top: 3px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 
 .wrapper-input-button {
     display: flex;
-    justify-content: space-around;
-    
+    justify-content: space-between;
+    margin-top: 40px;
+    align-items: center;
+    margin-bottom: auto;
+}
+
+.cancelBtn{
+    height: 30px;
+    border: none;
+    background: none;
+    color: white;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    font-size: small;
+}
+
+.cancelBtn:hover{
+    transition: 10ms;
+    transform: translateY(-1px);
 }
 
 .nextBtn{
@@ -79,6 +103,23 @@
 }
 
 .returnBtn:hover{
+    transition: 10ms;
+    transform: translateY(-1px);
+}
+
+.confirmBtn{
+    height: 30px;
+    align-items: center;
+    color: white;
+    background-color: #414040;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 1px 1px 5px black;
+    cursor: pointer;
+    display: flex;
+}
+
+.confirmBtn:hover{
     transition: 10ms;
     transform: translateY(-1px);
 }
