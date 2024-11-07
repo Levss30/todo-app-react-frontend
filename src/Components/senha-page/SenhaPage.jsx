@@ -25,7 +25,7 @@ const SenhaPage = () => {
                               Digite o seu email
                             </div>
                             <div className="form-group">
-                              <input type='email' placeholder="Teste@Email.com"/>
+                              <input type='email' placeholder="Teste@Email.com" required/>
                             </div>
                           </>
                         )}
@@ -57,8 +57,8 @@ const SenhaPage = () => {
                               <h2 className="form-title">Alterar senha</h2>
                             </header>
                             <div className="form-group">
-                              <input type='password' placeholder="Nova Senha"/>
-                              <input type='password' placeholder="Confirmar Senha"/>
+                              <input type='password' placeholder="Nova Senha" required/>
+                              <input type='password' placeholder="Confirmar Senha" required/>
                             </div>
                           </>
                         )}
