@@ -1,8 +1,8 @@
-import { LoginPage } from './Components/login-page/LoginPage';
+import { LoginPage } from './frontend/Components/login-page/LoginPage';
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
-import TodoPage from './Components/todo-page/TodoPage';
-import CadastroPage from './Components/cadastro-page/CadastroPage';
-import SenhaPage from './Components/senha-page/SenhaPage';
+import TodoPage from './frontend/Components/todo-page/TodoPage';
+import CadastroPage from './frontend/Components/cadastro-page/CadastroPage';
+import SenhaPage from './frontend/Components/senha-page/SenhaPage';
 
 const Principal = () =>{
   return(
